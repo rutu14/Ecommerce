@@ -1,0 +1,17 @@
+@import url('https://friendly-kilby-44e498.netlify.app/components/component.css');
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+@import url(nav.css);
+@import url(login.css);
+
+:root{
+    --body-bg:#f8f8ffd9;
+    --btn-hover:#e26c6ea6;
+    --input-box:#00000047;
+}
+
+body{
+    background-color: var(--body-bg);
+}
+main{
+    height:calc( 100vh - 64px );
+}
