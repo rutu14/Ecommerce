@@ -1,0 +1,99 @@
+.header {
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0.8rem 0 2rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%); 
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
+.brand-name{
+    font-family: 'Dekko', cursive;
+    color: var(--primary-colour);
+}
+
+.header-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-section {
+    height: 4rem;
+    padding: 0.8rem;
+}
+  
+.header-nav li {
+    display: inline-block;
+    width: 5rem;
+    text-align: center;
+}
+
+.text-link {
+    color:var(--black);
+    text-decoration: none;
+    margin: 0.8rem;
+}  
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 8rem;
+}
+
+.login-sign{
+    background: var(--body-bg);
+}
+
+.dropdown-intial{
+    display: none;
+}
+
+.dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    transform: translate(0px, 55px);
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    background-color: var(--tertiary-colour);
+    border: 1px solid var( --btn-link);
+    border-radius: 10px;
+}
+
+.nav-icon {
+    font-size: 2.5rem;
+}
+
+.nav-icon-badge {
+    font-size: 1.3rem;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.input-pos {
+    margin-left: auto;
+}
+
+.inp-border{
+    border: 1px solid var(--input-box);
+}
+
+.input-width {
+    width: 50rem;
+    border-right: 0;
+    height: 3.2rem;
+    padding: unset;
+    padding-inline-end: 1.6rem;
+    padding-inline-start: 1.6rem;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
