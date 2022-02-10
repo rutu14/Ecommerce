@@ -7,6 +7,10 @@
     --body-bg:#f8f8ffd9;
     --btn-hover:#e26c6ea6;
     --input-box:#00000047;
+
+    --box-shadow: #0000000d;
+
+    --site-name-font: 'Dekko', cursive;
 }
 
 body{
