@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header-logo">
+            <a href="index.html" class="btn-link td header-logo">
+                <img class="avatar avatar-md" src="/assests/logo.svg">
+                <h1 class="heading1 medium brand-name">
+                    वयन
+                </h1>
+            </a>       
+        </div>                 
+        <div class="input-grp input-pos" id="searchform">
+            <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
+            <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="header-nav">
+            <nav class="icon-section">
+                <ul>
+                  <li>
+                      <button class="button-icon nav-icon cp">
+                          <i class="bi bi-cart"></i>
+                          <span class="textButtonBadge nav-icon-badge">9</span>
+                      </button>
+                </li>
+                <li>
+                    <button class="button-icon nav-icon cp">
+                        <i class="bi bi-heart"></i>
+                        <span class="textButtonBadge nav-icon-badge">9</span>
+                    </button>
+                </li>
+                </ul>
+            </nav>
+            <div class="account">  
+                <!-- <button class="btn btn-primary outline login-sign" type="button">Login</button>              -->
+                <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
+                <div id="dropdown" class="dropdown-intial">
+                    <a href="index.html" class="btn-link td text-center m-t10" role="button">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+    </main>
+    <script src="js/nav.js"></script>     
+</body>
+</html>
