@@ -62,11 +62,11 @@
     top: 0;
     right: 15px;
     transform: translate(0px, 55px);
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
     font-size: 1.6rem;
     background-color: var(--tertiary-colour);
     border: 1px solid var( --btn-link);
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .nav-icon {
