@@ -5,17 +5,13 @@
 
 .hero-img{
     height: inherit;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 10px 0 0 10px;
 }
 
 .hero-title{
     height: 50rem;
     word-spacing: 9999rem;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 0 10px 10px 0;
     padding: 4rem;
     background-color:var(--disabled-inner);
 }
