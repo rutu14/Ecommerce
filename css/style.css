@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
 @import url(nav.css);
 @import url(login.css);
+@import url(home.css);
 
 :root{
     --body-bg:#f8f8ffd9;
@@ -16,6 +17,11 @@
 body{
     background-color: var(--body-bg);
 }
+
 main{
-    height:calc( 100vh - 64px );
+    min-height:calc( 100vh - 64px );
+}
+
+.main-container{
+    padding: 1.5rem 2rem;
 }
