@@ -1,0 +1,47 @@
+.hero-section{
+    margin: 2rem 4rem 8rem;
+    height: 50rem;
+}
+
+.hero-img{
+    height: inherit;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.hero-title{
+    height: 50rem;
+    word-spacing: 9999rem;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 4rem;
+    background-color:var(--disabled-inner);
+}
+
+.hero-btn{
+    width: 15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title-color{
+    color: var(--info-background);
+    background-color: var(--input-box);
+}
+
+.category-card, .category-card-img, .title-color{
+    width: 30rem;
+}
+
+.category-card:hover{
+    transform: scale(1.1,1.1);
+}
+
+.below-hero{
+    margin: 4rem;
+    gap: 4rem;
+    justify-items: center;
+}
