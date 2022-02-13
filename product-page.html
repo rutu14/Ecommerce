@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Product Page</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header-logo">
+            <a href="index.html" class="btn-link td header-logo">
+                <img class="avatar avatar-md" alt="Logo" src="/assests/logo.svg">
+                <h1 class="heading1 medium brand-name">
+                    वयन
+                </h1>
+            </a>       
+        </div>                 
+        <div class="input-grp input-pos" id="searchform">
+            <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
+            <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="header-nav">
+            <nav class="icon-section">
+                <ul>
+                  <li>
+                      <button class="button-icon nav-icon cp">
+                          <i class="bi bi-cart"></i>
+                          <span class="textButtonBadge nav-icon-badge">9</span>
+                      </button>
+                </li>
+                <li>
+                    <button class="button-icon nav-icon cp">
+                        <i class="bi bi-heart"></i>
+                        <span class="textButtonBadge nav-icon-badge">9</span>
+                    </button>
+                </li>
+                </ul>
+            </nav>
+            <div class="account">  
+                <!-- <button class="btn btn-primary outline login-sign" type="button">Login</button> -->
+                <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
+                <div id="dropdown" class="dropdown-intial">
+                    <a href="index.html" class="btn-link td text-center m-t10" role="button">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="product-list">
+        <aside class="filter-section">
+            <section class="filter-header">
+                <h4 class="heading3 medium">Filters</h4>
+                <a class="btn-link filter-btn" role="button">Reset</a>
+            </section>
+
+            <h4 class="heading4 filter-section-heading medium">Pricing</h4>
+            <section class="filter-1 m-t5">
+                <div>
+                    <input id="radio1" type="radio" class="radiobtn" name="radio" value="1">
+                    <label for="radio1">Low to High</label>   
+                </div>
+                <div class="m-t5">
+                    <input id="radio2" type="radio" class="radiobtn" name="radio" value="2">
+                    <label for="radio2">High to Low</label>
+                </div>                        
+            </section>
+            
+            <h4 class="heading4 filter-section-heading medium m-t10">Category</h4>
+            <section class="filter-1 m-t5">
+                <div>
+                    <input id="check" type="checkbox" class="checkbox">
+                    <label for="check">Accessories</label>   
+                </div>
+                <div class="m-t5">
+                    <input id="check" type="checkbox" class="checkbox">
+                    <label for="check">Designs</label>
+                </div>  
+                <div class="m-t5">
+                    <input id="check" type="checkbox" class="checkbox">
+                    <label for="check">Tools</label>
+                </div>  
+                <div class="m-t5">
+                    <input id="check" type="checkbox" class="checkbox">
+                    <label for="check">Clothing</label>
+                </div>  
+                <div class="m-t5">
+                    <input id="check" type="checkbox" class="checkbox">
+                    <label for="check">Machines</label>
+                </div>                        
+            </section>
+
+            <h4  class="heading4 filter-section-heading medium m-t10">Price-Range</h4>
+            <section class="filter-1 m-t10">
+                <input type="range" min="1" max="100" value="50" class="slider" list="label">
+            </section>
+        </aside>
+        <section class="product-grid grid-4-cols"> 
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/product-page/clothing (1).jfif">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Akriti</h2>
+                    <h3 class="card-subtitle medium">Women's Cotton Shirt</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 1700
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                   <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div>    
+
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/product-page/clothing (2).jfif">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Non-Stop</h2>
+                    <h3 class="card-subtitle medium">Women's Jeans</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 2000
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                   <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div> 
+            
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/product-page/clothing (3).jfif">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Red</h2>
+                    <h3 class="card-subtitle medium">Smiling Shirt</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 700
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                   <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/product-page/clothing (4).jfif">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Mango</h2>
+                    <h3 class="card-subtitle medium">Women's Shirt</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 1100
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                   <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/product-page/clothing (5).jfif">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Giffrae</h2>
+                    <h3 class="card-subtitle medium">Women's T-Shirt</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 500
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                   <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/product-page/clothing (1).png">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Frills</h2>
+                    <h3 class="card-subtitle medium">Beige Crop Top</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 950
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                   <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/product-page/clothing (6).jfif">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Mango</h2>
+                    <h3 class="card-subtitle medium">Women's Shirt</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 800
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                   <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="card card-box-shadow product-card">
+                <img class="card-img card-img-border product-card-img" src="/assests/images/cloth.jfif">
+                <div class="card-title-box product-card-title-box">
+                    <h2 class="card-title medium">Colors</h2>
+                    <h3 class="card-subtitle medium">Women's Formal Shirt</h3>
+                </div>
+                <div class="card-content text4 product-card-content">
+                    ₹ 1500 <span class="sale-price"> ₹ 3500 </span>
+                </div>
+                <div class="product-btns">
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    </button>
+                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                    </button>
+                </div>
+            </div> 
+                                  
+        </section>   
+    </main>
+    <script src="js/nav.js"></script>     
+</body>
+</html>
