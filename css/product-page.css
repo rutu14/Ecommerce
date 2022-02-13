@@ -95,7 +95,7 @@ input[type="range"]::-moz-range-thumb {
   
 input[type="range"]:focus::-moz-range-thumb{
     outline: 2px solid var(--secondary-colour);
-    outline-offset: 0.125rem;
+    outline-offset: 2px;
 }
 
 .product-card, .product-card-img{
@@ -117,7 +117,7 @@ input[type="range"]:focus::-moz-range-thumb{
     width: 21rem;
     height: 8.6rem;   
     align-items: center;
-    transform: translate(0, 190px);
+    transform: translate(0, 19rem);
     position: absolute;
     justify-content: space-evenly;
     background: var(--white);
