@@ -5,6 +5,7 @@
 @import url(home.css);
 @import url(product-page.css);
 @import url(cart-page.css);
+@import url(wishlist.css);
 
 :root{
     --body-bg:#f8f8ffd9;
@@ -12,6 +13,8 @@
     --input-box:#00000047;
 
     --box-shadow: #0000000d;
+
+    --wishlist-shadow:#00000080;
 
     --site-name-font: 'Dekko', cursive;
 }
