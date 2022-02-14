@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Cart Page</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header-logo">
+            <a href="index.html" class="btn-link td header-logo">
+                <img class="avatar avatar-md" alt="Logo" src="/assests/logo.svg">
+                <h1 class="heading1 medium brand-name">
+                    वयन
+                </h1>
+            </a>       
+        </div>                 
+        <div class="input-grp input-pos" id="searchform">
+            <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
+            <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="header-nav">
+            <nav class="icon-section">
+                <ul>
+                    <li>
+                        <a href="cart-page.html" class="btn-link" role="button">
+                            <button class="button-icon nav-icon cp">
+                                <i class="bi bi-cart"></i>
+                                <span class="textButtonBadge nav-icon-badge">9</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-link" role="button">
+                            <button class="button-icon nav-icon cp">
+                                <i class="bi bi-heart"></i>
+                                <span class="textButtonBadge nav-icon-badge">9</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="account">  
+                <!-- <a href="login-page.html" class="btn btn-primary outline  td login-sign" type="button">Login</a> -->
+                <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
+                <div id="dropdown" class="dropdown-intial">
+                    <a href="index.html" class="btn-link td cp text-center m-t10" role="button">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="cart-list">
+        <section class="cart-grid">            
+            <div class="card horizontal-large card-box-shadow cart-card m-t20">
+                <img class="card-img horizontal-large-img card-h-img-border-l cart-card-img" alt="Product-Image" src="/assests/images/product-page/clothing (1).png">
+                <div class="card-body horizontal-large-content cart-card-width">
+                    <div class="card-title-box cart-card-width">
+                        <h2 class="card-title medium">Frills</h2>
+                        <h3 class="card-subtitle medium">Beige Crop Top</h3>
+                    </div>
+                    <div class="card-content text4 product-card-content cart-card-width">
+                        ₹ 950
+                    </div> 
+                    <div class="card-primary-btn m-t10">
+                        <button class="btn btn-primary outline text-uppercase cart-action-btn wishlist-btn" type="button">
+                        Move to Wishlist
+                        </button>
+                        <button class="btn btn-primary text-uppercase medium cart-action-btn delete-btn" type="button">Remove from Cart</button>
+                    </div>                 
+                </div>                
+                <div class="card-actions h-large-action cart-action m-t10">
+                    <h4 class="text4 medium">Quantity</h4>
+                    <div class="quantity-input">
+                        <button class="btn-primary-float quantity-btns" type="button"><i class="bi bi-dash"></i></button>
+                        <input id="text-input" class="text-input login-input text-center quantity-inp" type="number" value="1" />
+                        <button class="btn-primary-float quantity-btns" type="button"><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>                
+            </div> 
+                              
+            <div class="card horizontal-large card-box-shadow cart-card m-t20">
+                <img class="card-img horizontal-large-img card-h-img-border-l cart-card-img" alt="Product-Image" src="/assests/images/product-page/clothing (4).jfif">
+                <div class="card-body horizontal-large-content cart-card-width">
+                    <div class="card-title-box cart-card-width">
+                        <h2 class="card-title medium">Mango</h2>
+                        <h3 class="card-subtitle medium">Women's Shirt</h3>
+                    </div>
+                    <div class="card-content text4 product-card-content cart-card-width">
+                        ₹ 1100
+                    </div> 
+                    <div class="card-primary-btn m-t10">
+                        <button class="btn btn-primary outline text-uppercase cart-action-btn wishlist-btn" type="button">
+                        Move to Wishlist
+                        </button>
+                        <button class="btn btn-primary text-uppercase medium cart-action-btn delete-btn" type="button">Remove from Cart</button>
+                    </div>                 
+                </div>                
+                <div class="card-actions h-large-action cart-action m-t10">
+                    <h4 class="text4 medium">Quantity</h4>
+                    <div class="quantity-input">
+                        <button class="btn-primary-float quantity-btns" type="button"><i class="bi bi-dash"></i></button>
+                        <input id="text-input" class="text-input login-input text-center quantity-inp" type="number" value="1" />
+                        <button class="btn-primary-float quantity-btns" type="button"><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>                
+            </div> 
+
+            <div class="card horizontal-large card-box-shadow cart-card m-t20">
+                <img class="card-img horizontal-large-img card-h-img-border-l cart-card-img" alt="Product-Image" src="/assests/images/cloth.jfif">
+                <div class="card-body horizontal-large-content cart-card-width">
+                    <div class="card-title-box cart-card-width">
+                        <h2 class="card-title medium">Colors</h2>
+                        <h3 class="card-subtitle medium">Women's Formal Shirt</h3>
+                    </div>
+                    <div class="card-content text4 product-card-content cart-card-width">
+                        ₹ 1500 <span class="sale-price"> ₹ 3500 </span>
+                    </div> 
+                    <div class="card-primary-btn m-t10">
+                        <button class="btn btn-primary outline text-uppercase cart-action-btn wishlist-btn" type="button">
+                        Move to Wishlist
+                        </button>
+                        <button class="btn btn-primary text-uppercase medium cart-action-btn delete-btn" type="button">Remove from Cart</button>
+                    </div>                 
+                </div>                
+                <div class="card-actions h-large-action cart-action m-t10">
+                    <h4 class="text4 medium">Quantity</h4>
+                    <div class="quantity-input">
+                        <button class="btn-primary-float quantity-btns" type="button"><i class="bi bi-dash"></i></button>
+                        <input id="text-input" class="text-input login-input text-center quantity-inp" type="number" value="1" />
+                        <button class="btn-primary-float quantity-btns" type="button"><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>                
+            </div>               
+        </section> 
+
+        <aside class="cart-summary">
+            <section class="summary-header">
+                <h4 class="heading3 medium text-center">Checkout</h4>
+            </section>
+
+            <a class="btn-link td heading4 medium text-center summary-promocode">Have A Promo Code?</a>
+            <section class="promocode-content m-t5">
+                <button class="icon-button promocode-cross"><i class="bi bi-x"></i></button>  
+                <div class="input-grp">
+                    <input type="text" class="input-grp-right text-input input-width inp-border promocode-inp" />
+                    <button class="icon-button input-grp-btn btn-right inp-border promocode-btn"><i class="bi bi-search"></i></button>
+                </div>                             
+            </section>
+            <hr class="summary-line line-minor m-t6">
+
+            <section class="summary-content m-t5">
+                <section class="summary-details">
+                    <h6 class="text4 regular">Subtotal : </h6>     
+                    <h6 class="text4 regular">₹ 2000.00</h6>   
+                </section>
+                <section class="summary-details">
+                    <h6 class="text4 regular">Delivery : </h6>     
+                    <h6 class="text4 regular">₹ 20.00</h6>  
+                </section>
+                <section class="summary-details">
+                    <h6 class="text4 regular">Coupon : </h6>     
+                    <h6 class="text4 regular">₹ 00.00</h6>    
+                </section> 
+                <section class="summary-details">
+                    <h6 class="text4 regular">Taxes (5%) : </h6>     
+                    <h6 class="text4 regular">₹ 100.00</h6>    
+                </section>                       
+            </section>
+            <hr class="summary-line m-t5">
+            <section class="summary-details m-t5">
+                <h6 class="text3 regular">Total : </h6>     
+                <h6 class="text3 regular">₹ 2120.00</h6>    
+            </section>
+            <button class="btn btn-primary text-uppercase m-t30 checkout-btn" type="button">Check Out</button>      
+        </aside>
+    </main>
+    <script src="js/nav.js"></script> 
+    <script src="js/cart.js"></script>     
+</body>
+</html>
