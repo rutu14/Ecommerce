@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assests/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assests/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assests/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assests/favicon/site.webmanifest">
     <link href="/css/style.css" rel="stylesheet">
-    <title>Product Page</title>
+    <title>वयन</title>
 </head>
 <body>
     <header class="nav-header header">
@@ -15,30 +19,32 @@
             <ul class="menu-nav"> 
                 <li class="no-list"> 
                     <a href="product.html" class="btn-link" role="button">
-                        <button class="button-icon nav-icon cp">Products
-                            <i class="bi bi-heart"></i>
+                        <button class="button-icon nav-icon text-uppercase cp">Products
+                            <i class="bi bi-basket"></i>
                         </button>
                     </a>
                 </li>
                 <li class="no-list">
                     <a href="cart.html" class="btn-link" role="button">
-                        <button class="button-icon nav-icon cp">Cart
+                        <button class="button-icon nav-icon text-uppercase cp">Cart
                             <i class="bi bi-cart"></i>
                         </button>
                     </a>
                 </li>
                 <li class="no-list"> 
                     <a href="wishlist.html" class="btn-link" role="button">
-                        <button class="button-icon nav-icon cp">Wishlist
+                        <button class="button-icon nav-icon text-uppercase cp">Wishlist
                             <i class="bi bi-heart"></i>
                         </button>
                     </a>
                 </li>
                 <li class="no-list"> 
-                    <a href="pages/login.html" class="btn-link cp td text-center nav-icon m-t10" role="button">
-                            Logout
+                    <a href="login.html" class="btn-link td" role="button">
+                        <button class="button-icon text-uppercase nav-icon cp">Logout
+                            <i class="bi bi-door-closed"></i>
+                        </button>
                     </a>   
-                </li>         
+                </li>
             </ul>
        </div>  
         <div class="header-logo nav-title">
@@ -49,7 +55,7 @@
                 </h1>
             </a>   
         </div>
-        <div class="avatar avatar-text text-lg mobile-avatar">RL</div>       
+        <div class="avatar avatar-text text-md mobile-avatar">RL</div>       
         <div class="input-grp input-pos" id="searchform">
             <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
             <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
@@ -76,7 +82,12 @@
                 </ul>
             </nav>
             <div class="account">  
-                <button class="btn btn-primary outline login-sign" type="button">Login</button> 
+                <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
+                <div id="dropdown" class="dropdown-intial">
+                    <a href="login.html" class="btn-link cp td text-center m-t10" role="button">
+                        Logout
+                    </a>
+                </div> 
             </div>
         </div>
      </header>
