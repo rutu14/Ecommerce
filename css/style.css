@@ -1,5 +1,6 @@
-@import url('https://friendly-kilby-44e498.netlify.app/components/component.css');
+@import url('https://threadui.netlify.app/components/component.css');
 @import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url(nav.css);
 @import url(login.css);
 @import url(home.css);
