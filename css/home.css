@@ -41,3 +41,46 @@
     gap: 4rem;
     justify-items: center;
 }
+
+@media only screen and (max-width: 1200px) {
+    .hero-title-text{
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+    }
+
+    .hero-title{
+        padding: 7rem 2rem;
+    }
+
+    .below-hero{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .below-hero{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-section{
+        height: unset;
+        margin: 2rem 0 5rem;
+    }
+
+    .hero-title {
+        padding: 5rem 0;
+        height: auto;
+    }
+
+    .hero-title-text {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .hero-btn {
+        width: unset;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        min-height: 3rem;
+    }
+}

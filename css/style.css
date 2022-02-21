@@ -4,8 +4,8 @@
 @import url(nav.css);
 @import url(login.css);
 @import url(home.css);
-@import url(product-page.css);
-@import url(cart-page.css);
+@import url(product.css);
+@import url(cart.css);
 @import url(wishlist.css);
 
 :root{
@@ -14,7 +14,7 @@
     --input-box:#00000047;
 
     --box-shadow: #0000000d;
-
+    --delete-btn: #f88484;
     --wishlist-shadow:#00000080;
 
     --site-name-font: 'Dekko', cursive;

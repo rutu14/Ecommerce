@@ -1,15 +1,10 @@
-.header {
-    height: 6.4rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 0.8rem 0 2rem;
-    box-shadow: 0 2px 5px 0 var(--box-shadow), 0 2px 10px 0 var(--box-shadow); 
-}
-
 .header-logo{
     display: flex;
     align-items: center;
+}
+
+.mobile-avatar{
+    display: none;
 }
 
 .brand-name{
@@ -96,4 +91,30 @@
     padding-inline-start: 1.6rem;
     line-height: 2.4rem;
     font-size: 1.6rem;
+}
+
+.menu-nav{
+    margin-top: -3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .input-width{
+        width: unset;
+    }
+
+    .input-pos{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile-avatar{
+        display: inline-flex;
+    }
+
+    .nav-icon {
+        padding: 1.5rem 4rem;
+        font-size: 3.5rem;
+        color: var(--secondary-colour);
+    }
 }

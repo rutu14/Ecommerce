@@ -8,24 +8,57 @@
     <title>Home Page</title>
 </head>
 <body>
-    <header class="header"> 
-        <div class="header-logo">
+    <header class="nav-header header">
+        <div class="mobile-nav">
+            <input type="checkbox" />
+            <span></span><span></span><span></span>
+            <ul class="menu-nav"> 
+                <li class="no-list"> 
+                    <a href="pages/product.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Products
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list">
+                    <a href="pages/cart.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Cart
+                            <i class="bi bi-cart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="pages/pages/wishlist.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Wishlist
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="pages/login.html" class="btn-link cp td text-center nav-icon m-t10" role="button">
+                            Logout
+                    </a>   
+                </li>                 
+            </ul>
+       </div>  
+        <div class="header-logo nav-title">
             <a href="index.html" class="btn-link td header-logo">
                 <img class="avatar avatar-md" alt="Logo" src="/assests/logo.svg">
                 <h1 class="heading1 medium brand-name">
                     वयन
                 </h1>
-            </a>       
-        </div>                 
+            </a>   
+        </div>
+        <div class="avatar avatar-text text-lg mobile-avatar">RL</div>       
         <div class="input-grp input-pos" id="searchform">
             <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
             <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
-        </div>
-        <div class="header-nav">
+        </div>      
+        <div class="nav-items">
             <nav class="icon-section">
                 <ul>
                     <li>
-                        <a href="cart-page.html" class="btn-link" role="button">
+                        <a href="pages/cart.html" class="btn-link" role="button">
                             <button class="button-icon nav-icon cp">
                                 <i class="bi bi-cart"></i>
                                 <span class="textButtonBadge nav-icon-badge">9</span>
@@ -33,7 +66,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wishlist.html" class="btn-link" role="button">
+                        <a href="pages/pages/wishlist.html" class="btn-link" role="button">
                             <button class="button-icon nav-icon cp">
                                 <i class="bi bi-heart"></i>
                                 <span class="textButtonBadge nav-icon-badge">9</span>
@@ -43,21 +76,20 @@
                 </ul>
             </nav>
             <div class="account">  
-                <!-- <a href="login-page.html" class="btn btn-primary outline  td login-sign" type="button">Login</a> -->
                 <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
                 <div id="dropdown" class="dropdown-intial">
-                    <a href="index.html" class="btn-link cp td text-center m-t10" role="button">
+                    <a href="pages/login.html" class="btn-link cp td text-center m-t10" role="button">
                         Logout
                     </a>
                 </div>
             </div>
         </div>
-    </header>
+     </header>
     <main class="main-container">
         <section class="grid-70-30 hero-section">
             <img class="image-responsive hero-img" src="assests/images/design.jfif">
-            <div class="hero-title  text-center">
-                <h2 class="heading1 medium">Discover everything you need here.</h2>
+            <div class="hero-title text-center">
+                <h2 class="heading1 medium hero-title-text">Discover everything you need here.</h2>
                 <a href="#category" class="btn btn-primary text-uppercase m-t20 hero-btn td" role="button">
                     Explore<i class="bi bi-arrow-right inside-btn"></i>
                 </a>                            
@@ -65,34 +97,34 @@
         </section>
         <h3 id="category" class="heading2 medium text-center m20">Category</h3>
         <section class="grid-3-cols below-hero">
-            <a href="product-page.html" class="card card-box-shadow cp category-card">
+            <a href="pages/product.html" class="card card-box-shadow cp category-card">
                 <div class="card-title-box middle-overlay title-color">
                     <h2 class="heading3 text-center medium">Accessories</h2>
                 </div>
                 <img class="card-img card-img-all-borders category-card-img" src="/assests/images/accessories.jfif">
             </a>
 
-            <a href="product-page.html" class="card card-box-shadow cp category-card">
+            <a href="pages/product.html" class="card card-box-shadow cp category-card">
                 <div class="card-title-box middle-overlay title-color">
                     <h2 class="heading3 text-center medium">Designs</h2>
                 </div>
                 <img class="card-img card-img-all-borders category-card-img" src="/assests/images/design1.jfif">
             </a>
 
-            <a href="product-page.html" class="card card-box-shadow cp category-card">
+            <a href="pages/product.html" class="card card-box-shadow cp category-card">
                 <div class="card-title-box middle-overlay title-color">
                     <h2 class="heading3 text-center medium">Tools</h2>
                 </div>
                 <img class="card-img card-img-all-borders category-card-img" src="/assests/images/tools.png">
             </a>
-            <a href="product-page.html" class="card card-box-shadow cp category-card">
+            <a href="pages/product.html" class="card card-box-shadow cp category-card">
                 <div class="card-title-box middle-overlay title-color">
                     <h2 class="heading3 text-center medium">Clothing</h2>
                 </div>
                 <img class="card-img card-img-all-borders category-card-img" src="/assests/images/cloth.jfif">
             </a>
 
-            <a href="product-page.html" class="card card-box-shadow cp category-card">
+            <a href="pages/product.html" class="card card-box-shadow cp category-card">
                 <div class="card-title-box middle-overlay title-color">
                     <h2 class="heading3 text-center medium">Embroidery Machines</h2>
                 </div>

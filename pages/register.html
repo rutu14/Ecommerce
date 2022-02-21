@@ -4,28 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <title>Register</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-logo">
-            <a href="index.html" class="btn-link td header-logo">
-                <img class="avatar avatar-md" src="/assests/logo.svg">
+    <header class="nav-header header">
+        <div class="mobile-nav">
+            <input type="checkbox" />
+            <span></span><span></span><span></span>
+            <ul class="menu-nav"> 
+                <li class="no-list"> 
+                    <a href="product.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Products
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list">
+                    <a href="cart.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Cart
+                            <i class="bi bi-cart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="wishlist.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Wishlist
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="pages/login.html" class="btn-link cp td text-center nav-icon m-t10" role="button">
+                            Logout
+                    </a>   
+                </li>        
+            </ul>
+       </div>  
+        <div class="header-logo nav-title">
+            <a href="/index.html" class="btn-link td header-logo">
+                <img class="avatar avatar-md" alt="Logo" src="/assests/logo.svg">
                 <h1 class="heading1 medium brand-name">
                     वयन
                 </h1>
-            </a>       
-        </div>      
+            </a>   
+        </div>
+        <button class="btn btn-primary outline login-sign mobile-avatar" type="button">Login</button>       
         <div class="input-grp input-pos" id="searchform">
             <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
             <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
-        </div>
-        <div class="header-nav">
+        </div>      
+        <div class="nav-items">
             <nav class="icon-section">
                 <ul>
                     <li>
-                        <a href="cart-page.html" class="btn-link" role="button">
+                        <a href="cart.html" class="btn-link" role="button">
                             <button class="button-icon nav-icon cp">
                                 <i class="bi bi-cart"></i>
                                 <span class="textButtonBadge nav-icon-badge">9</span>
@@ -46,7 +79,7 @@
                 <button class="btn btn-primary outline login-sign" type="button">Login</button> 
             </div>
         </div>
-    </header>
+     </header>
     <main>
         <section class="login-container">
             <h1 class="heading2 medium">Register Yourself</h1>
@@ -64,12 +97,11 @@
 
                     <button class="btn btn-primary login-btn m-t10" type="button">Sign Up</button> 
 
-                    <a href="login-page.html" class="btn-link td text-center m-t10" role="button">Login</a> 
+                    <a href="login.html" class="btn-link td text-center m-t10" role="button">Login</a> 
                 </form>                
             </article>
         </section>
     </main>
-    <script src="js/nav.js"></script> 
-    <script src="js/password.js"></script>
+    <script src="/js/nav.js"></script> 
 </body>
 </html>

@@ -37,3 +37,27 @@
 .wishlist-card:hover .wishlist-btns{
     display: flex;
 }
+
+@media only screen and (min-width: 1500px) {
+    .grid-mobile{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid-mobile{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-mobile{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-mobile{
+        grid-template-columns: 1fr;
+    }
+}

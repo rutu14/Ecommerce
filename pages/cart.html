@@ -4,28 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <title>Cart Page</title>
 </head>
 <body>
-    <header class="header"> 
-        <div class="header-logo">
-            <a href="index.html" class="btn-link td header-logo">
+    <header class="nav-header header">
+        <div class="mobile-nav">
+            <input type="checkbox" />
+            <span></span><span></span><span></span>
+            <ul class="menu-nav"> 
+                <li class="no-list"> 
+                    <a href="product.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Products
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list">
+                    <a href="cart.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Cart
+                            <i class="bi bi-cart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="wishlist.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Wishlist
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="pages/login.html" class="btn-link cp td text-center nav-icon m-t10" role="button">
+                            Logout
+                    </a>   
+                </li>               
+            </ul>
+       </div>  
+        <div class="header-logo nav-title">
+            <a href="/index.html" class="btn-link td header-logo">
                 <img class="avatar avatar-md" alt="Logo" src="/assests/logo.svg">
                 <h1 class="heading1 medium brand-name">
                     वयन
                 </h1>
-            </a>       
-        </div>                 
+            </a>   
+        </div>
+        <div class="avatar avatar-text text-lg mobile-avatar">RL</div>       
         <div class="input-grp input-pos" id="searchform">
             <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
             <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
-        </div>
-        <div class="header-nav">
+        </div>      
+        <div class="nav-items">
             <nav class="icon-section">
                 <ul>
                     <li>
-                        <a href="cart-page.html" class="btn-link" role="button">
+                        <a href="cart.html" class="btn-link" role="button">
                             <button class="button-icon nav-icon cp">
                                 <i class="bi bi-cart"></i>
                                 <span class="textButtonBadge nav-icon-badge">9</span>
@@ -43,16 +76,16 @@
                 </ul>
             </nav>
             <div class="account">  
-                <!-- <a href="login-page.html" class="btn btn-primary outline  td login-sign" type="button">Login</a> -->
+                <!-- <a href="pages/login.html" class="btn btn-primary outline  td login-sign" type="button">Login</a> -->
                 <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
                 <div id="dropdown" class="dropdown-intial">
-                    <a href="index.html" class="btn-link td cp text-center m-t10" role="button">
+                    <a href="/index.html" class="btn-link cp td text-center m-t10" role="button">
                         Logout
                     </a>
                 </div>
             </div>
         </div>
-    </header>
+     </header>
     <main class="cart-list">
         <section class="cart-grid">            
             <div class="card horizontal-large card-box-shadow cart-card m-t20">
@@ -145,7 +178,7 @@
             <a class="btn-link td heading4 medium text-center summary-promocode">Have A Promo Code?</a>
             <section class="promocode-content m-t5">
                 <button class="icon-button promocode-cross"><i class="bi bi-x"></i></button>  
-                <div class="input-grp">
+                <div class="input-grp promocode-inp-grp">
                     <input type="text" class="input-grp-right text-input input-width inp-border promocode-inp" />
                     <button class="icon-button input-grp-btn btn-right inp-border promocode-btn"><i class="bi bi-search"></i></button>
                 </div>                             
@@ -178,7 +211,7 @@
             <button class="btn btn-primary text-uppercase m-t30 checkout-btn" type="button">Check Out</button>      
         </aside>
     </main>
-    <script src="js/nav.js"></script> 
-    <script src="js/cart.js"></script>     
+    <script src="/js/nav.js"></script> 
+    <script src="/js/cart.js"></script>     
 </body>
 </html>

@@ -4,28 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <title>Product Page</title>
 </head>
 <body>
-    <header class="header"> 
-        <div class="header-logo">
-            <a href="index.html" class="btn-link td header-logo">
+    <header class="nav-header header">
+        <div class="mobile-nav">
+            <input type="checkbox" />
+            <span></span><span></span><span></span>
+            <ul class="menu-nav"> 
+                <li class="no-list"> 
+                    <a href="product.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Products
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list">
+                    <a href="cart.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Cart
+                            <i class="bi bi-cart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="wishlist.html" class="btn-link" role="button">
+                        <button class="button-icon nav-icon cp">Wishlist
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </a>
+                </li>
+                <li class="no-list"> 
+                    <a href="pages/login.html" class="btn-link cp td text-center nav-icon m-t10" role="button">
+                            Logout
+                    </a>   
+                </li>         
+            </ul>
+       </div>  
+        <div class="header-logo nav-title">
+            <a href="/index.html" class="btn-link td header-logo">
                 <img class="avatar avatar-md" alt="Logo" src="/assests/logo.svg">
                 <h1 class="heading1 medium brand-name">
                     वयन
                 </h1>
-            </a>       
-        </div>                 
+            </a>   
+        </div>
+        <div class="avatar avatar-text text-lg mobile-avatar">RL</div>       
         <div class="input-grp input-pos" id="searchform">
             <input type="text" id="searchterm" class="input-grp-right text-input input-width inp-border" />
             <button class="icon-button input-grp-btn btn-right inp-border"><i class="bi bi-search"></i></button>
-        </div>
-        <div class="header-nav">
+        </div>      
+        <div class="nav-items">
             <nav class="icon-section">
                 <ul>
                     <li>
-                        <a href="cart-page.html" class="btn-link" role="button">
+                        <a href="cart.html" class="btn-link" role="button">
                             <button class="button-icon nav-icon cp">
                                 <i class="bi bi-cart"></i>
                                 <span class="textButtonBadge nav-icon-badge">9</span>
@@ -43,16 +76,10 @@
                 </ul>
             </nav>
             <div class="account">  
-                <!-- <a href="login-page.html" class="btn btn-primary outline  td login-sign" type="button">Login</a> -->
-                <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
-                <div id="dropdown" class="dropdown-intial">
-                    <a href="index.html" class="btn-link td cp text-center m-t10" role="button">
-                        Logout
-                    </a>
-                </div>
+                <button class="btn btn-primary outline login-sign" type="button">Login</button> 
             </div>
         </div>
-    </header>
+     </header>
     <main class="product-list">
         <aside class="filter-section">
             <section class="filter-header">
@@ -97,8 +124,11 @@
             </section>
 
             <h4  class="heading4 filter-section-heading medium m-t10">Price-Range</h4>
-            <section class="filter-1 m-t10">
-                <input type="range" min="1" max="100" value="50" class="slider" list="label">
+            <section class="filter-1 m-t40">
+                <div class="slider-grp">
+                    <div class="slider-label" id="range-label"></div>
+                    <input type="range" id="range-input" min="1" max="100" value="50" class="slider" list="label">                                      
+                </div>    
             </section>
         </aside>
         <section class="product-grid grid-4-cols"> 
@@ -112,11 +142,11 @@
                     ₹ 1700
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div>    
@@ -131,11 +161,11 @@
                     ₹ 2000
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div> 
@@ -150,11 +180,11 @@
                     ₹ 700
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div> 
@@ -169,11 +199,11 @@
                     ₹ 1100
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div> 
@@ -188,11 +218,11 @@
                     ₹ 500
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div> 
@@ -207,11 +237,11 @@
                     ₹ 950
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div> 
@@ -226,11 +256,11 @@
                     ₹ 800
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                    <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div> 
@@ -245,17 +275,18 @@
                     ₹ 1500 <span class="sale-price"> ₹ 3500 </span>
                 </div>
                 <div class="product-btns">
-                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-heart inside-btn product-btn-icon"></i>
+                    <button class="btn btn-primary outline text-uppercase hero-btn product-btn wishlist-btn" type="button">
+                        <i class="bi bi-heart inside-btn product-btn-icon"></i>WishList
                     </button>
                     <button class="btn btn-primary text-uppercase hero-btn product-btn" type="button">
-                        <i class="bi bi-cart inside-btn product-btn-icon"></i>
+                        <i class="bi bi-cart inside-btn product-btn-icon"></i>Add to Cart
                     </button>
                 </div>
             </div> 
                                   
         </section>   
     </main>
-    <script src="js/nav.js"></script>     
+    <script src="/js/nav.js"></script>  
+    <script src="/js/slider.js"></script>      
 </body>
 </html>
